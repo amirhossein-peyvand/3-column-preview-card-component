@@ -1,0 +1,24 @@
+.card {
+  width: clamp(100px, 90%, 70rem);
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    body {
+      .card {
+        display: flex;
+
+        .box {
+          row-gap: 8rem;
+
+          div {
+            row-gap: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
